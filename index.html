@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>अंदेखा संघर्ष - मृत्युंजय राजवंश | Official Book Store</title>
+    <title>मृत्युंजय राजवंश | अंदेखा संघर्ष Official Book Store</title>
     <style>
         :root {
             --bg-color: #0b0c10;
@@ -11,7 +11,7 @@
             --text-main: #e0e0e0;
             --accent-gold: #d4af37;
             --text-muted: #c5c6c7;
-            --border-color: #333333;
+            --border-color: #2d3748;
         }
 
         * {
@@ -28,7 +28,7 @@
         }
 
         header {
-            background: linear-gradient(180deg, rgba(0,0,0,0.9) 0%, rgba(11,12,16,0.9) 100%);
+            background: rgba(11, 12, 16, 0.95);
             padding: 20px 8%;
             display: flex;
             justify-content: space-between;
@@ -59,149 +59,47 @@
             color: var(--accent-gold);
         }
 
-        /* Hero Section */
-        .hero {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-between;
-            padding: 80px 8%;
-            gap: 40px;
-        }
-
-        .hero-text {
-            flex: 1;
-            min-width: 300px;
-        }
-
-        .hero-text h1 {
-            font-size: 3rem;
-            color: var(--accent-gold);
-            margin-bottom: 10px;
-            line-height: 1.2;
-        }
-
-        .hero-text h3 {
-            font-size: 1.2rem;
-            color: var(--text-muted);
-            margin-bottom: 20px;
-            font-weight: 400;
-        }
-
-        .hero-text p {
-            font-size: 1.05rem;
-            margin-bottom: 30px;
-            color: #aaaaaa;
-        }
-
-        .btn-group {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            padding: 12px 28px;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: all 0.3s ease;
-            display: inline-block;
-        }
-
-        .btn-primary {
-            background-color: var(--accent-gold);
-            color: #000;
-        }
-
-        .btn-primary:hover {
-            background-color: #b39226;
-            transform: translateY(-2px);
-        }
-
-        .btn-secondary {
-            border: 1px solid var(--accent-gold);
-            color: var(--accent-gold);
-        }
-
-        .btn-secondary:hover {
-            background: rgba(212, 175, 55, 0.1);
-            transform: translateY(-2px);
-        }
-
-        .hero-img {
-            flex: 1;
-            min-width: 280px;
-            display: flex;
-            justify-content: center;
-            position: relative;
-        }
-
-        /* Black & White Canvas Art Container */
-        .book-card-main {
-            width: 300px;
-            height: 420px;
-            background: #000;
-            border: 2px solid var(--accent-gold);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 20px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        /* Animation Background for Black & White Sketch Aesthetic */
-        .bw-animation-bg {
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: radial-gradient(circle, rgba(255,255,255,0.05) 10%, transparent 10%);
-            background-size: 20px 20px;
-            animation: moveDots 20s linear infinite;
-            opacity: 0.6;
-        }
-
-        @keyframes moveDots {
-            from { background-position: 0 0; }
-            to { background-position: 200px 200px; }
-        }
-
-        .book-title-overlay {
-            z-index: 2;
-            position: relative;
-        }
-
-        .book-title-overlay h2 {
-            font-size: 2.2rem;
-            color: #fff;
-            letter-spacing: 2px;
-            border-bottom: 2px solid var(--accent-gold);
-            padding-bottom: 10px;
-            margin-bottom: 10px;
-        }
-
-        .book-title-overlay p {
-            font-size: 0.9rem;
-            color: var(--accent-gold);
-        }
-
-        /* Section Styling */
         section {
-            padding: 70px 8%;
-            border-top: 1px solid var(--border-color);
+            padding: 60px 8%;
+            border-bottom: 1px solid var(--border-color);
         }
 
         .section-title {
             text-align: center;
             font-size: 2.2rem;
             color: var(--accent-gold);
-            margin-bottom: 40px;
+            margin-bottom: 35px;
         }
 
-        /* Chapter Showcase */
+        /* 1. Header & Author Section at the top */
+        .author-hero {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: center;
+            background: linear-gradient(180deg, rgba(31, 40, 51, 0.5) 0%, rgba(11, 12, 16, 1) 100%);
+        }
+
+        .author-hero-text h1 {
+            font-size: 3rem;
+            color: var(--accent-gold);
+            margin-bottom: 5px;
+        }
+
+        .author-hero-text h3 {
+            font-size: 1.3rem;
+            color: #fff;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+
+        .author-hero-text p {
+            color: var(--text-muted);
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+
+        /* Front Chapter Preview Cards with Read More Button */
         .chapter-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -212,13 +110,10 @@
             background-color: var(--card-bg);
             padding: 25px;
             border-radius: 6px;
-            border: 1px solid #2d3748;
-            transition: transform 0.3s, border 0.3s;
-        }
-
-        .chapter-card:hover {
-            transform: translateY(-50px);
-            border-color: var(--accent-gold);
+            border: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         .chapter-card h4 {
@@ -229,16 +124,107 @@
         .chapter-card p {
             color: var(--text-muted);
             font-size: 0.95rem;
+            margin-bottom: 15px;
         }
 
-        /* Books Store Section */
+        .btn-readmore {
+            background: transparent;
+            border: 1px solid var(--accent-gold);
+            color: var(--accent-gold);
+            padding: 8px 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: 0.3s;
+            align-self: flex-start;
+        }
+
+        .btn-readmore:hover {
+            background-color: var(--accent-gold);
+            color: #000;
+        }
+
+        /* 2. Unique Bar Style Index (Accordion) */
+        .index-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .accordion-bar {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            margin-bottom: 12px;
+            border-radius: 6px;
+            overflow: hidden;
+            transition: border-color 0.3s;
+        }
+
+        .accordion-bar:hover {
+            border-color: var(--accent-gold);
+        }
+
+        .accordion-header {
+            padding: 18px 25px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+            color: #fff;
+            font-size: 1.1rem;
+            user-select: none;
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .accordion-header span.icon {
+            color: var(--accent-gold);
+            font-size: 1.4rem;
+            transition: transform 0.3s;
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+            background-color: #141a22;
+            color: var(--text-muted);
+            padding: 0 25px;
+        }
+
+        .accordion-bar.active .accordion-content {
+            padding: 20px 25px;
+            max-height: 2000px; /* Big enough for chapter text */
+            border-top: 1px solid var(--border-color);
+        }
+
+        .accordion-bar.active .accordion-header span.icon {
+            transform: rotate(45deg);
+        }
+
+        /* 3. Aabhar (Acknowledgment) Section */
+        .aabbhar-box {
+            background-color: var(--card-bg);
+            border-left: 4px solid var(--accent-gold);
+            padding: 30px;
+            border-radius: 6px;
+            max-width: 900px;
+            margin: 0 auto;
+            color: var(--text-main);
+        }
+
+        .aabbhar-box p {
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+
+        /* Books Store Cards Section */
         .store-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 30px;
         }
 
-        .store-item {
+        .store-card {
             background-color: var(--card-bg);
             border: 1px solid var(--border-color);
             border-radius: 8px;
@@ -249,183 +235,301 @@
             justify-content: space-between;
         }
 
-        .store-item-art {
-            height: 200px;
-            background: #111;
-            border: 1px dashed #444;
+        .store-card-img {
+            width: 100%;
+            height: 250px;
+            background-color: #111;
+            border-radius: 6px;
             display: flex;
             align-items: center;
             justify-content: center;
             margin-bottom: 15px;
-            color: #777;
-            font-style: italic;
+            border: 1px dashed var(--border-color);
+            color: var(--accent-gold);
+            font-weight: bold;
         }
 
-        .store-item h3 {
-            margin-bottom: 10px;
-            color: #fff;
+        .btn-buy {
+            display: inline-block;
+            background-color: var(--accent-gold);
+            color: #000;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: 0.3s;
         }
 
-        .store-item p {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            margin-bottom: 15px;
+        .btn-buy:hover {
+            background-color: #b39226;
         }
 
-        /* Author Bio Section */
-        .bio-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
+        /* Modal / Pop-up Window for Full Read More */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            z-index: 200;
+            justify-content: center;
             align-items: center;
+            padding: 20px;
+        }
+
+        .modal-content {
             background-color: var(--card-bg);
-            padding: 40px;
+            border: 1px solid var(--accent-gold);
+            padding: 30px;
+            max-width: 700px;
+            max-height: 80vh;
+            overflow-y: auto;
             border-radius: 8px;
-            border-left: 4px solid var(--accent-gold);
+            position: relative;
         }
 
-        .bio-text {
-            flex: 2;
-            min-width: 280px;
-        }
-
-        .bio-text p {
-            margin-bottom: 15px;
-            color: var(--text-main);
+        .close-btn {
+            position: absolute;
+            top: 15px; right: 20px;
+            color: var(--accent-gold);
+            font-size: 1.8rem;
+            cursor: pointer;
         }
 
         footer {
             text-align: center;
-            padding: 30px;
+            padding: 25px;
             background-color: #050505;
             color: #666;
             font-size: 0.9rem;
-            border-top: 1px solid var(--border-color);
-        }
-
-        @media (max-width: 768px) {
-            .hero-text h1 { font-size: 2.2rem; }
-            header { flex-direction: column; gap: 15px; }
-            nav a { margin: 0 10px; }
         }
     </style>
 </head>
 <body>
 
-    <!-- Header / Navbar -->
+    <!-- Header -->
     <header>
         <div class="logo">मृत्युंजय राजवंश</div>
         <nav>
-            <a href="#about-book">किताब के बारे में</a>
-            <a href="#chapters">अध्याय</a>
-            <a href="#store">स्टोर (All Books)</a>
-            <a href="#author">लेखक</a>
+            <a href="#about-author">लेखक परिचय</a>
+            <a href="#front-highlights">झलकियां</a>
+            <a href="#subject-index">विषय सूची</a>
+            <a href="#aabbhar">आभार</a>
+            <a href="#other-books">अन्य पुस्तकें</a>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-text">
-            <h1>अंदेखा संघर्ष</h1>
-            <h3>दो पहियों पर दौड़ती ज़िंदगी और हेलमेट के पीछे छुपा सच</h3>
-            <p>यह कहानी सिर्फ सड़कों की नहीं, बल्कि उन लाखों राइडर्स और डिलीवरी बॉयज़ की है जो हर रोज़ धूप, बारिश और ट्रैफिक से लड़कर शहर की रफ़्तार को ज़िंदा रखते हैं।</p>
-            <div class="btn-group">
-                <a href="YOUR_AMAZON_KINDLE_LINK" target="_blank" class="btn btn-primary">Amazon पर खरीदें</a>
-                <a href="#store" class="btn btn-secondary">अन्य पुस्तकें देखें</a>
-            </div>
-        </div>
-        <div class="hero-img">
-            <div class="book-card-main">
-                <div class="bw-animation-bg"></div>
-                <div class="book-title-overlay">
-                    <h2>अंदेखा<br>संघर्ष</h2>
-                    <p>Mratyunjay Brahmavanshi</p>
-                </div>
-            </div>
+    <!-- 3. Shuruaat Me Author Name & About Author -->
+    <section class="author-hero" id="about-author">
+        <div class="author-hero-text">
+            <h1>मृत्युंजय राजवंश</h1>
+            <h3>(Mratyunjay Brahmavanshi)</h3>
+            <p><strong>लेखक के बारे में:</strong></p>
+            <p>मृत्युंजय राजवंश केवल एक लेखक नहीं, बल्कि उन लाखों आवाजों के प्रतिनिधि हैं जो हर रोज भारत की सड़कों पर अपनी किस्मत और वक्त से लड़ते हैं। उत्तर प्रदेश के बुंदेलखंड से ताल्लुक रखने वाले मृत्युंजय ने अपनी शिक्षा और सपनों को पूरा करने के लिए संघर्ष को बहुत करीब से देखा है।</p>
+            <p>आज जब आप उन्हें गुड़गांव की भीड़-भाड़ वाली सड़कों पर एक 'रापिडो मैन' या 'डिलीवरी बॉय' के रूप में देखते हैं, तो वह आपके लिए महज एक सर्विस प्रोवाइडर हो सकते हैं, लेकिन उनके हेलमेट के पीछे एक ऐसा रचनाकार छिपा है जो हर राइड के साथ एक नई कहानी बुनता है।</p>
+            <p><em>"यह किताब मेरी नहीं, उन रास्तों की है जिन्होंने मुझे चलना सिखाया। यह उन लोगों के लिए है जो थकते हैं, पर रुकते नहीं।"</em></p>
         </div>
     </section>
 
-    <!-- About Book Section -->
-    <section id="about-book">
-        <h2 class="section-title">पुस्तक के बारे में</h2>
-        <p style="text-align: center; max-width: 800px; margin: 0 auto; color: var(--text-muted); font-size: 1.1rem;">
-            "अंदेखा संघर्ष" गुड़गांव की सड़कों पर रात-दिन दौड़ने वाले एक रापिडो मैन और डिलीवरी बॉय के पसीने, रेटिंग के डर, मौसम की मार और आत्म-सम्मान की जंग की सच्ची दास्तान है। यह पुस्तक समाज को उस नज़रिये से देखने पर मजबूर करती है जिसे अक्सर 'इग्नोर' कर दिया जाता है।
-        </p>
-    </section>
-
-    <!-- Chapters Overview Section -->
-    <section id="chapters">
-        <h2 class="section-title">अध्याय झलकियां (Chapters Overview)</h2>
+    <!-- 1. Front Highlights with Read More Button -->
+    <section id="front-highlights">
+        <h2 class="section-title">किताब की मुख्य झलकियां (Highlights)</h2>
         <div class="chapter-grid">
+
             <div class="chapter-card">
-                <h4>अध्याय 1: ज़ीरो किलोमीटर</h4>
-                <p>पहले कदम की लड़ाई, कांपता हुआ एक्सीलेटर और बी.एससी. डिग्री से सड़कों तक का सफर।</p>
+                <div>
+                    <h4>अध्याय 1: ज़ीरो किलोमीटर</h4>
+                    <p>• B.Sc. डिग्री बनाम दो पहियों का सफर<br>• पहला राइडर ऑर्डर और पहला नर्वस अनुभव<br>• हेलमेट के नकाब के पीछे छिपी भावनाएं</p>
+                </div>
+                <button class="btn-readmore" onclick="openModal('ch1')">Read More (पूरा पढ़ें)</button>
             </div>
+
             <div class="chapter-card">
-                <h4>अध्याय 2: 10 मिनट की आँच & रेटिंग का खौफ</h4>
-                <p>समय की पाबंदी, ट्रैफिक की ज़द और एक 1-Star Rating का मानसिक बोझ।</p>
+                <div>
+                    <h4>अध्याय 2: 10 मिनट की आँच & रेटिंग का खौफ</h4>
+                    <p>• घटते हुए टाइमर और 1-Star Rating का डर<br>• चिलचिलाती धूप में डिलीवरी का सच<br>• इंसानों को चलाता डिजिटल एल्गोरिदम</p>
+                </div>
+                <button class="btn-readmore" onclick="openModal('ch2')">Read More (पूरा पढ़ें)</button>
             </div>
+
             <div class="chapter-card">
-                <h4>अध्याय 3: अनजानी सवारी</h4>
-                <p>बाइक की पिछली सीट पर बैठने वाले मुसाफिरों के बदलते मिज़ाज और उनकी कहानियों की दास्तान।</p>
+                <div>
+                    <h4>अध्याय 4: खुद भूखा, सबका अन्नदाता</h4>
+                    <p>• दूसरों तक गरम खाना पहुँचाना और खुद खाली पेट रहना<br>• पॉश सोसायटियों की लिफ्ट और सीढ़ियों का संघर्ष</p>
+                </div>
+                <button class="btn-readmore" onclick="openModal('ch4')">Read More (पूरा पढ़ें)</button>
             </div>
-            <div class="chapter-card">
-                <h4>अध्याय 4: खुद भूखा, सबका अन्नदाता</h4>
-                <p>दूसरों के खाने का पैकेट पहुँचाते हुए खुद खाली पेट रात बिताने का दर्दनाक सच।</p>
-            </div>
-            <div class="chapter-card">
-                <h4>अध्याय 5: मौसम की मार</h4>
-                <p>45 डिग्री की धूप, मूसलाधार बारिश और कोहरे की जानलेवा चादर से कुदरत की जंग।</p>
-            </div>
-            <div class="chapter-card">
-                <h4>अध्याय 6: अंदेखा दर्द</h4>
-                <p>12-14 घंटे ड्यूटी के बाद पीठ का दर्द, अकेलापन और आत्म-सम्मान की लड़ाई।</p>
-            </div>
+
         </div>
     </section>
 
-    <!-- Books Store Section -->
-    <section id="store">
-        <h2 class="section-title">बुक स्टोर (My Publications)</h2>
+    <!-- 2. Unique Bar Style Subject Index (Accordion) -->
+    <section id="subject-index">
+        <h2 class="section-title">विषय सूची (Subject Index)</h2>
+        <div class="index-container">
+
+            <div class="accordion-bar">
+                <div class="accordion-header">
+                    <span>प्रस्तावना: हेलमेट के पीछे का चेहरा</span>
+                    <span class="icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <p>एक राइडर की नज़र से इस बेपरवाह शहर का नज़ारा...</p>
+                </div>
+            </div>
+
+            <div class="accordion-bar">
+                <div class="accordion-header">
+                    <span>अध्याय 1: ज़ीरो किलोमीटर – पहले कदम की लड़ाई</span>
+                    <span class="icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <p>सुबह के साढ़े छह बजे हैं। गुड़गांव की सड़कों पर अभी धुंध छंटी भी नहीं है, लेकिन मेरे मोबाइल की स्क्रीन पर 'Online' का बटन दब चुका है। यह सिर्फ एक बटन नहीं है, यह एक युद्ध का आगाज़ है... हाथ में मोबाइल थामे मैं गुड़गांव के एक व्यस्त चौराहे पर खड़ा था। उंगलियाँ बार-बार 'Go Online' वाले बटन के ऊपर जाकर रुक रही थीं...</p>
+                </div>
+            </div>
+
+            <div class="accordion-bar">
+                <div class="accordion-header">
+                    <span>अध्याय 2: दस मिनट की आँच और रेटिंग का खौफ</span>
+                    <span class="icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <p>शहर की रफ़्तार चकाचौंध भरी हो सकती है, लेकिन एक राइडर के लिए यह रफ़्तार किसी सज़ा से कम नहीं होती। अगर 'अंदेखा संघर्ष' का कोई सबसे बड़ा दुश्मन है, तो वह है—समय...</p>
+                </div>
+            </div>
+
+            <div class="accordion-bar">
+                <div class="accordion-header">
+                    <span>अध्याय 3: अनजानी सवारी – रापिडो मैन की दास्ताँ</span>
+                    <span class="icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <p>रापिडो की पिछली सीट एक ऐसी जगह है जहाँ हर दस मिनट में इंसानियत का एक नया चेहरा देखने को मिलता है। जब कोई मुसाफिर मेरी बाइक पर बैठता है, तो मेरा और उसका रिश्ता सिर्फ एक 'OTP' से शुरू होता है...</p>
+                </div>
+            </div>
+
+            <div class="accordion-bar">
+                <div class="accordion-header">
+                    <span>अध्याय 4: खुद भूखा, सबका अन्नदाता – डिलीवरी बॉय का सच</span>
+                    <span class="icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <p>रात के नौ बज रहे हैं। शहर के चमकते रेस्टोरेंट्स के बाहर हम जैसे दर्जनों लड़के अपनी-अपनी बाइकों पर झुके हुए मोबाइल की स्क्रीन को घूर रहे हैं। हवा में बिरयानी और पिज्जा की खुशबू तैर रही है, लेकिन हमारे हिस्से में सिर्फ धुआँ आता है...</p>
+                </div>
+            </div>
+
+            <div class="accordion-bar">
+                <div class="accordion-header">
+                    <span>अध्याय 5: मौसम की मार – कुदरत से जंग</span>
+                    <span class="icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <p>लोग अक्सर कहते हैं कि मौसम बड़ा सुहाना है, पर एक राइडर के लिए मौसम 'नज़ारा' नहीं, बल्कि एक 'जहर' होता है जिसे हमें रोज़ पीना पड़ता है। जेठ की जलती दोपहर और बारिश की मूसलाधार बूंदों का सच...</p>
+                </div>
+            </div>
+
+            <div class="accordion-bar">
+                <div class="accordion-header">
+                    <span>उपसंहार: संघर्ष कभी व्यर्थ नहीं जाता</span>
+                    <span class="icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <p>यह किताब उन सभी के लिए है जो गिरते हैं, चोट खाते हैं, पर फिर से उठकर अपनी बाइक स्टार्ट करते हैं। याद रखिएगा, आपकी हर एक राइड और पसीना कभी बेकार नहीं जाएगा...</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 3. Full Open Aabhar (Acknowledgment) Section -->
+    <section id="aabbhar">
+        <h2 class="section-title">आभार (Acknowledgment)</h2>
+        <div class="aabbhar-box">
+            <p>यह किताब उन हज़ारों-लाखों राइडर्स और डिलीवरी पार्टनर्स के नाम है, जो चिलचिलाती धूप, कड़कती ठंड और मूसलाधार बारिश की परवाह किए बिना सड़कों पर दौड़ते रहते हैं। आप सिर्फ सामान या सवारी नहीं पहुँचाते, आप इस शहर की धड़कन को ज़िंदा रखते हैं। आपकी मेहनत ही मेरी इस कहानी की असल प्रेरणा है।</p>
+            <p>मैं तहेदिल से शुक्रिया अदा करना चाहता हूँ अपने उन दो अज़ीज़ दोस्तों का, जो मेरे हर उतार-चढ़ाव में चट्टान की तरह मेरे साथ खड़े रहे। बिना किसी स्वार्थ के, मेरे सपनों को अपना सपना बनाने के लिए मैं आपका हमेशा ऋणी रहूँगा।</p>
+            <p>साथ ही, मैं शुक्रिया अदा करता हूँ हर उस इंसान का, जिसने कभी किसी राइडर की मजबूरी को समझा। शुक्रिया उन लोगों का जिन्होंने ऑर्डर लेट होने पर झिड़की देने के बजाय पानी के लिए पूछा, और उन सबका जिन्होंने हेलमेट के पीछे छिपी थकान को एक मुस्कुराहट से कम किया। आपकी छोटी सी संवेदनशीलता हमारे जैसे हज़ारों राइडर्स के लिए बहुत बड़ा संबल होती है।</p>
+            <p>अंत में, शुक्रिया उन रास्तों का, जिन्होंने मुझे कभी रुकना नहीं सिखाया।</p>
+        </div>
+    </section>
+
+    <!-- 3. Other Books Store (Cards with Image & Amazon Links) -->
+    <section id="other-books">
+        <h2 class="section-title">मेरी अन्य पुस्तकें (Other Books & Links)</h2>
         <div class="store-grid">
-            <!-- Book 1 -->
-            <div class="store-item">
-                <div class="store-item-art">[ B&W Rider Sketch Art ]</div>
+
+            <div class="store-card">
+                <div class="store-card-img">[ Book Cover: अंदेखा संघर्ष ]</div>
                 <h3>अंदेखा संघर्ष</h3>
-                <p>सड़क के योद्धाओं की असल जिंदगी की कहानी।</p>
-                <div class="btn-group" style="justify-content: center;">
-                    <a href="YOUR_AMAZON_KINDLE_LINK" target="_blank" class="btn btn-primary" style="font-size: 0.85rem; padding: 8px 15px;">Kindle / Paperback</a>
-                </div>
+                <p>गुड़गांव की सड़कों पर दौड़ती ज़िंदगी और डिलीवरी बॉयज़ की असल गाथा।</p>
+                <a href="YOUR_AMAZON_LINK_HERE" target="_blank" class="btn-buy">Amazon Kindle पर खरीदें</a>
             </div>
 
-            <!-- Book 2 / Future Release -->
-            <div class="store-item">
-                <div class="store-item-art">[ Upcoming Book Cover ]</div>
-                <h3>आत्मकथा & नए आयाम</h3>
-                <p>जीवन के अनुभव और प्रेरणादायक संस्मरण।</p>
-                <div class="btn-group" style="justify-content: center;">
-                    <a href="https://wa.me/YOUR_PHONE_NUMBER" target="_blank" class="btn btn-secondary" style="font-size: 0.85rem; padding: 8px 15px;">Pre-Order / Contact</a>
-                </div>
+            <div class="store-card">
+                <div class="store-card-img">[ Book Cover: आगामी पुस्तक ]</div>
+                <h3>आत्मकथा एवं नए अनुभव</h3>
+                <p>जीवन के उतार-चढ़ाव और संघर्ष से सफलता की ओर बढ़ते कदम।</p>
+                <a href="YOUR_AMAZON_LINK_HERE" target="_blank" class="btn-buy">Amazon Kindle पर देखें</a>
             </div>
+
         </div>
     </section>
 
-    <!-- Author Bio Section -->
-    <section id="author">
-        <h2 class="section-title">लेखक के बारे में</h2>
-        <div class="bio-container">
-            <div class="bio-text">
-                <h3 style="color: var(--accent-gold); margin-bottom: 15px;">मृत्युंजय राजवंश (Mratyunjay Brahmavanshi)</h3>
-                <p>उत्तर प्रदेश के बुंदेलखंड से ताल्लुक रखने वाले मृत्युंजय राजवंश केवल एक लेखक नहीं, बल्कि भारत की सड़कों पर हर रोज अपनी किस्मत से लड़ने वाले लाखों राइडर्स की आवाज़ हैं।</p>
-                <p>टीम लीडर और मैनेजर से लेकर गुड़गांव की सड़कों पर एक रापिडो मैन/डिलीवरी बॉय तक का सफर तय करते हुए, उन्होंने जीवन की कड़वी सच्चाइयों और सपनों को बहुत करीब से देखा है। "अंदेखा संघर्ष" उनकी पहली प्रमुख कृति है।</p>
-            </div>
+    <!-- Modal Box for Read More -->
+    <div class="modal" id="readModal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h3 id="modalTitle" style="color: var(--accent-gold); margin-bottom: 15px;"></h3>
+            <p id="modalBody" style="color: var(--text-muted); font-size: 1rem; line-height: 1.7;"></p>
         </div>
-    </section>
+    </div>
 
-    <!-- Footer -->
     <footer>
-        <p>© 2026 मृत्युंजय राजवंश (Mratyunjay Brahmavanshi). All Rights Reserved.</p>
+        <p>© 2026 मृत्युंजय राजवंश (Mratyunjay Brahmavanshi). सर्वाधिकार सुरक्षित।</p>
     </footer>
 
+    <!-- JavaScript for Interactive Accordion and Read More Modal -->
+    <script>
+        // 1. Accordion Bar Functionality
+        const accordionBars = document.querySelectorAll('.accordion-bar');
+        accordionBars.forEach(bar => {
+            bar.querySelector('.accordion-header').addEventListener('click', () => {
+                bar.classList.toggle('active');
+            });
+        });
+
+        // 2. Modal Popup Data & Functionality
+        const chaptersData = {
+            'ch1': {
+                title: 'अध्याय 1: ज़ीरो किलोमीटर – पहले कदम की लड़ाई',
+                body: 'सुबह के साढ़े छह बजे हैं। गुड़गांव की सड़कों पर अभी धुंध छंटी भी नहीं है, लेकिन मेरे मोबाइल की स्क्रीन पर "Online" का बटन दब चुका है... एक तरफ मेरी बी.एससी. की डिग्री थी, मेरी पढ़ाई थी, और दूसरी तरफ ये दो पहिए थे जो अब मेरी हकीकत बनने वाले थे। मन में एक ही सवाल बार-बार कौंध रहा था— "अगर किसी जानने वाले ने देख लिया तो?" लेकिन जेब की खालीपन ने उस डर को पीछे धकेल दिया।'
+            },
+            'ch2': {
+                title: 'अध्याय 2: दस मिनट की आँच और रेटिंग का खौफ',
+                body: 'मोबाइल की स्क्रीन पर जब ऑर्डर फ्लैश होता है, तो उसके साथ एक टाइमर भी चलने लगता है। 10 मिनट में डिलीवरी या 5 मिनट में पिकअप। एक दिन दोपहर के 2 बज रहे थे, धूप में तारकोल पिघल रहा था। 1-Star Rating मिलने पर मेरी दिन भर की मेहनत पर पानी फिर गया था। डिजिटल दुनिया में इंसान की अहमियत उसके काम से नहीं, एल्गोरिदम से तय होती है।'
+            },
+            'ch4': {
+                title: 'अध्याय 4: खुद भूखा, सबका अन्नदाता – डिलीवरी बॉय का सच',
+                body: 'रात के नौ बज रहे हैं। रेस्टोरेंट वाला पैकेट मेरे हाथ में थमाता है—वह पैकेट अभी भी गर्म है, उसकी महक मेरी भूख को और बढ़ा देती है। सच तो यह है कि दोपहर तीन बजे के बाद मैंने सिर्फ एक चाय पी है। दुनिया मुझे डिलीवरी बॉय कहती है, लेकिन असल में मैं इस शहर का वह अन्नदाता हूँ जो हज़ारों घरों का पेट भरता है, लेकिन जिसका अपना चूल्हा अक्सर रातों को ख़ामोश रहता है।'
+            }
+        };
+
+        function openModal(chKey) {
+            document.getElementById('modalTitle').innerText = chaptersData[chKey].title;
+            document.getElementById('modalBody').innerText = chaptersData[chKey].body;
+            document.getElementById('readModal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('readModal').style.display = 'none';
+        }
+
+        // Close modal on outside click
+        window.onclick = function(event) {
+            const modal = document.getElementById('readModal');
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
