@@ -127,6 +127,91 @@ body {
     border-radius: 0 8px 8px 0;
 }
 
+/* Other Books Section Design */
+.other-books-section {
+    margin: 50px 0;
+    padding: 35px 25px;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    color: var(--accent-gold);
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+}
+
+.section-subtext {
+    text-align: center;
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+    font-size: 0.95rem;
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.book-card {
+    background: #1f242e;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-gold);
+}
+
+.book-cover {
+    width: 140px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    margin-bottom: 15px;
+}
+
+.book-info h3 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.book-info p {
+    color: var(--text-secondary);
+    font-size: 0.88rem;
+    margin-bottom: 18px;
+    line-height: 1.6;
+}
+
+.buy-btn {
+    display: inline-block;
+    background: var(--accent-gold);
+    color: #000000;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+}
+
+.buy-btn:hover {
+    background: #e6c247;
+}
+
 /* Support Box (Action Area) */
 .support-box {
     position: relative;
@@ -203,4 +288,5 @@ footer {
     .main-title { font-size: 2.2rem; }
     .chapter-card { padding: 20px; }
     .support-box { padding: 25px 15px; }
+    .other-books-section { padding: 25px 15px; }
 }
