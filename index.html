@@ -3,122 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>अनदेखा संघर्ष - एक सच्ची कहानी</title>
-    <!-- Google Fonts for Classic Editorial Look -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Noto+Serif+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>अंदेखा संघर्ष - साहित्यिक कृतियाँ</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Hero Header -->
+    <!-- Dynamic Background Glows -->
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+
+    <!-- Header / Hero Section -->
     <header class="hero">
-        <div class="overlay"></div>
-        <div class="hero-content">
-            <span class="badge">A Real Life Journey</span>
-            <h1 class="main-title">अनदेखा संघर्ष</h1>
-            <p class="tagline">सड़क पर हर दिन की एक अनदेखी दास्तान</p>
+        <div class="hero-badge">साहित्यिक संग्रह</div>
+        <h1 class="main-title">अंदेखा संघर्ष</h1>
+        <p class="subtitle">हेलमेट के पीछे छिपे जज्बातों aur aam insaan ke sangharsh ki kahani</p>
+        <div class="author-tag">
+            <span class="author-name">लेखक: विकास कुमार (मृत्युंजय ब्रह्मवंशी)</span>
+        </div>
+
+        <!-- Book Switcher Tabs -->
+        <div class="book-tabs">
+            <button class="tab-btn active" onclick="switchBook('book1')">
+                <span>📖</span> अंदेखा संघर्ष (Rider's Life)
+            </button>
+            <button class="tab-btn" onclick="switchBook('book2')">
+                <span>✍️</span> आत्मकथा (Personal Biography)
+            </button>
         </div>
     </header>
 
-    <!-- Main Container -->
     <main class="container">
 
-        <!-- Chapter 1 -->
-        <article class="chapter-card">
-            <div class="chapter-header">
-                <span class="chapter-number">अध्याय ०१</span>
-                <h2>शुरुआत: धूप और धूल का सफर</h2>
+        <!-- BOOK 1: ANDEKHA SANGHARSH -->
+        <section id="book1" class="book-content active">
+
+            <div class="featured-quote-card">
+                <span class="quote-icon">“</span>
+                <p>हम सड़कों के वो अन्नदाता हैं जो पूरे शहर का पेट भरते हैं, पर खुद की भूख अक्सर हेलमेट के पीछे छिप जाती है।</p>
+                <span class="quote-author">— अंदेखा संघर्ष</span>
             </div>
 
-            <!-- Chapter Image -->
-            <div class="image-wrapper">
-                <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1000&q=80" alt="Rider on Road" class="chapter-img">
-                <span class="img-caption">सड़कें शांत हैं, पर मन में सवालों का शोर है...</span>
-            </div>
+            <div class="timeline">
 
-            <div class="chapter-body">
-                <p>मृत्युंजय ब्रह्मवंशी (Mratyunjay Brahmavanshi) केवल एक लेखक नहीं, बल्कि उन लाखों आवाजों के प्रतिनिधि हैं जो हर रोज भारत की सड़कों पर अपनी किस्मत और वक्त से लड़ते हैं। उत्तर प्रदेश के बुंदेलखंड से ताल्लुक रखने वाले मृत्युंजय ने अपनी शिक्षा और सपनों को पूरा करने के लिए संघर्ष को बहुत करीब से देखा है।
-आज जब आप उन्हें गुड़गांव की भीड़-भाड़ वाली सड़कों पर एक 'रापिडो मैन' या 'डिलीवरी बॉय' के रूप में देखते हैं, तो वह आपके लिए महज एक सर्विस प्रोवाइडर हो सकते हैं, लेकिन उनके हेलमेट के पीछे एक ऐसा रचनाकार छिपा है जो हर राइड के साथ एक नई कहानी बुनता है।
-"अंदेखा संघर्ष" उनकी पहली ऐसी कृति है, जो किसी काल्पनिक दुनिया की नहीं, बल्कि उसी डामर और धुएं वाली सड़क की सच्चाई है जहाँ हम और आप रोज गुजरते हैं। इस किताब के जरिए उन्होंने उन दो-पहिया योद्धाओं के जीवन के उन पन्नों को पलटने की कोशिश की है, जिन्हें अक्सर समाज 'अनदेखा' कर देता है।
-एक मैनेजर की जिम्मेदारी संभालने से लेकर, एक डिलीवरी राइडर की मेहनत और एक उभरते हुए उद्यमी (Entrepreneur) बनने के सपने तक—मृत्युंजय की यह यात्रा हर उस इंसान के लिए प्रेरणा है जो अपनी बाधाओं को अपनी ताकत बनाना जानता है।
-..</p>
+                <!-- Chapter 1 -->
+                <article class="timeline-card">
+                    <div class="card-header">
+                        <span class="ch-badge">अध्याय 01</span>
+                        <h2>जीरो किलोमीटर (पहले कदम की लड़ाई)</h2>
+                    </div>
+                    <img src="https://aeroe.com/cdn/shop/files/Aeroe_Spider_Rear_Rack_Heavy_Duty_Pannier_Bag_River_Ride.jpg" alt="Zero Kilometer" class="card-img">
+                    <p>हाथ में मोबाइल थामे और हेलमेट की बेल्ट कसते हुए, वो पहली राइड का अहसास। एक तरफ डिग्री का भार था और दूसरी तरफ दो पहियों की हकीकत।</p>
+                    <blockquote class="highlight-box">
+                        "उस दिन मैंने सिर्फ पहली कमाई नहीं की थी, बल्कि उस 'अंदेखे संघर्ष' की पहली सीढ़ी पर कदम रखा था।"
+                    </blockquote>
+                </article>
 
-                <blockquote class="classic-quote">
-                    "सड़क पर हर चलता हुआ राइडर सिर्फ ऑर्डर डिलीवरी नहीं करता, अपनी ख्वाहिशों का बोझ भी उठाता है।"
-                </blockquote>
+                <!-- Chapter 2 -->
+                <article class="timeline-card">
+                    <div class="card-header">
+                        <span class="ch-badge">अध्याय 02</span>
+                        <h2>समय की आँच (रेटिंग का खौफ)</h2>
+                    </div>
+                    <p>मोबाइल की स्क्रीन पर घटते हुए मिनट किसी सजा से कम नहीं होते। 10 मिनट में डिलीवरी या 5 मिनट में पिकअप—ये वो आँच है जिस पर हम रोज झुलसते हैं।</p>
+                    <div class="rating-visual">
+                        <div class="rating-score">4.69 ★</div>
+                        <div class="rating-info">1-Star ka khauf din bhar ki mehnat par paani fer deta hai.</div>
+                    </div>
+                    <blockquote class="highlight-box">
+                        "किसी के लिए वो सिर्फ एक '1-स्टार' बटन है, लेकिन हमारे लिए वो दिन भर की मेहनत का हिसाब है।"
+                    </blockquote>
+                </article>
 
-                <p>कहानी का आगे का हिस्सा यहाँ आएगा। धूप, बारिश और समय की पाबंदी के बीच चलती हुई ज़िंदगी का असली ताना-बाना...</p>
-            </div>
-        </article>
+                <!-- Chapter 3 -->
+                <article class="timeline-card">
+                    <div class="card-header">
+                        <span class="ch-badge">अध्याय 03</span>
+                        <h2>अनजानी सवारी (रापिडो मैन की दास्ताँ)</h2>
+                    </div>
+                    <img src="https://content.jdmagicbox.com/comp/guwahati/f5/9999px361.x361.190525114340.m4f5/catalogue/rapido-bike-taxi-rg-baruah-road-guwahati-q8eb284fss-250.jpg" alt="Rapido Rider" class="card-img">
+                    <p>पीछे बैठी सवारी कभी एक खामोश मुसाफिर होती है, तो कभी एक जज। हर सवारी एक नई कहानी और एक नया स्वभाव लेकर आती है।</p>
+                    <blockquote class="highlight-box">
+                        "अजीब बात है कि इस शहर में लोग एक-दूसरे को जानते नहीं, पर एक अजनबी की बाइक पर हाथ रखकर बैठ जाते हैं।"
+                    </blockquote>
+                </article>
 
-        <!-- Chapter 2 -->
-        <article class="chapter-card">
-            <div class="chapter-header">
-                <span class="chapter-number">अध्याय ०२</span>
-                <h2>रात का सन्नाटा और ट्रैफिक की आवाज़</h2>
-            </div>
+                <!-- Chapter 4 -->
+                <article class="timeline-card">
+                    <div class="card-header">
+                        <span class="ch-badge">अध्याय 04</span>
+                        <h2>खुद भूखा, सबका अन्नदाता</h2>
+                    </div>
+                    <p>हवा में बिरयानी और पिज्जा की खुशबू तैर रही है, पर हमारे हिस्से में सिर्फ 'धुआँ' और 'इंतज़ार' आता है।</p>
+                    <blockquote class="highlight-box">
+                        "हम अंदेखे जरूर हैं, पर हम बेजान नहीं हैं।"
+                    </blockquote>
+                </article>
 
-            <!-- Chapter Image -->
-            <div class="image-wrapper">
-                <img src="https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1000&q=80" alt="Night Rider" class="chapter-img">
-                <span class="img-caption">शहर सो जाता है, पर कुछ पहिये चलते रहते हैं।</span>
-            </div>
-
-            <div class="chapter-body">
-                <p>दूसरे अध्याय की कहानी यहाँ से शुरू करें। रात की शिफ्ट, सुनसान सड़कें और हर मोड़ पर मिलता नया अनुभव...</p>
-            </div>
-        </article>
-
-        <!-- Author Books Showcase Section -->
-        <section class="other-books-section">
-            <h2 class="section-title">लेखक की अन्य पुस्तकें</h2>
-            <p class="section-subtext">अगर आपको यह कहानी पसंद आ रही है, तो लेखक की पूरी किताबें अमेज़न/किंडल पर पढ़ें:</p>
-
-            <div class="books-grid">
-                
-                <!-- Book Card 1 -->
-                <div class="book-card">
-                    <img src="book1-cover" alt="Book Cover 1" class="book-cover">
-                    <div class="book-info">
-                        <h3>THE SECRIFICE OF A INDIAN GIRL</h3>
-                        <p>THIS STORY BASED ON EVERY INDIAN GIRL </p>
-                        <a href="https://www.amazon.com/dp/B0GX2X4KL1" class="buy-btn" target="_blank">अमेज़न से खरीदें</a>
+                <!-- Chapter 5 to 9 Summary Grid -->
+                <div class="mini-chapters-grid">
+                    <div class="mini-card">
+                        <h3>अध्याय 05: मौसम की मार</h3>
+                        <p>"हमारे लिए बारिश रोमांस नहीं, रिस्क है।"</p>
+                    </div>
+                    <div class="mini-card">
+                        <h3>अध्याय 06: आत्म-सम्मान</h3>
+                        <p>सोसायटियों के गेट पर गार्ड का बर्ताव और लिफ्ट में लोगों की हिचकिचाहट।</p>
+                    </div>
+                    <div class="mini-card">
+                        <h3>अध्याय 07: इंसानियत की झलक</h3>
+                        <p>"आपका एक 'शुक्रिया' हमारे लिए अगले 10 किलोमीटर का ईंधन बन जाता है।"</p>
+                    </div>
+                    <div class="mini-card">
+                        <h3>अध्याय 08: भाईचारा aur सपने</h3>
+                        <p>सड़क पर एक-दूसरे की मदद और हेलमेट के पीछे छिपे बड़े सपने।</p>
                     </div>
                 </div>
 
-                <!-- Book Card 2 -->
-                <div class="book-card">
-                    <img src="book2-cover" alt="Book Cover 2" class="book-cover">
-                    <div class="book-info">
-                        <h3>THE secrifice</h3>
-                        <p>सपनों, संघर्षों और जीवन के उतार-चढ़ाव की एक मर्मस्पर्शी आत्मकथा।</p>
-                        <a href="https://www.amazon.com/dp/B0GX2X4KL1" class="buy-btn" target="_blank">किंडल पर पढ़ें</a>
-                    </div>
-                </div>
-
             </div>
+
+            <!-- Acknowledgments Banner -->
+            <div class="thanks-banner">
+                <h3>सफर अभी जारी है</h3>
+                <p>विशेष आभार: Swiggy, Zomato, Rapido, Uber & Blinkit</p>
+                <div class="gold-line"></div>
+                <p class="final-words">"हम अंदेखे जरूर हैं, पर हम बेजान नहीं हैं।"</p>
+            </div>
+
         </section>
 
-        <!-- Author Support Box -->
-        <section class="support-box">
-            <div class="box-glow"></div>
-            <h3>इस कहानी का हिस्सा बनें</h3>
-            <p>सड़क पर हर दिन होने वाले इस संघर्ष को दुनिया के सामने लाने के इस प्रयास का हिस्सा बनें। आपका सहयोग इस आवाज़ को और मज़बूत बनायेगा।</p>
-            
-            <div class="cta-buttons">
-                <a href="#" class="btn btn-primary">लेखक को सपोर्ट करें</a>
-                <a href="https://www.amazon.com/dp/B0GX2X4KL1" class="btn btn-secondary" target="_blank">अमेज़न पर पूरी किताब पढ़ें</a>
+
+        <!-- BOOK 2: PERSONAL BIOGRAPHY -->
+        <section id="book2" class="book-content">
+
+            <div class="featured-quote-card bio-accent">
+                <span class="quote-icon">“</span>
+                <p>जीवन की वास्तविक सीख डिग्रियों में नहीं, बल्कि ज़मीन पर लड़ी गई लड़ाइयों और अनुभवों में मिलती है।</p>
+                <span class="quote-author">— आत्मकथा (विकास कुमार)</span>
             </div>
+
+            <div class="timeline">
+
+                <article class="timeline-card">
+                    <div class="card-header">
+                        <span class="ch-badge bio-badge">भाग 01</span>
+                        <h2>शुरुआती जीवन और शिक्षा</h2>
+                    </div>
+                    <p>उरई (जालौन) की गलियों से शिक्षा का सफर शुरू हुआ। बुंदेलखंड यूनिवर्सिटी से मैथमेटिक्स में B.Sc. पूरी करने के बाद शहर और जीवन को समझने का एक नया दृष्टिकोण मिला।</p>
+                </article>
+
+                <article class="timeline-card">
+                    <div class="card-header">
+                        <span class="ch-badge bio-badge">भाग 02</span>
+                        <h2>पेशेवर अनुभव और मैनेजमेंट</h2>
+                    </div>
+                    <p>Flipkart में Planning Leader के रूप में लॉजिस्टिक्स और ऑपरेशन्स को करीब से समझा। उसके बाद Ashirwaad Wedding Planner के साथ इवेंट्स और मानव स्वभाव की जटिलताओं को जाना।</p>
+                </article>
+
+                <article class="timeline-card">
+                    <div class="card-header">
+                        <span class="ch-badge bio-badge">भाग 03</span>
+                        <h2>ज़मीनी हकीकत और लेखन</h2>
+                    </div>
+                    <p>सड़कों पर काम करते हुए और आम लोगों के संघर्ष को करीब से देखते हुए कलम उठाने की प्रेरणा मिली। यही अनुभव आगे चलकर "अंदेखा संघर्ष" के रूप में सामने आए।</p>
+                </article>
+
+            </div>
+
         </section>
 
     </main>
 
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 अनदेखा संघर्ष. All Rights Reserved.</p>
+        <p>© 2026 सर्वाधिकार सुरक्षित | <strong>विकास कुमार (मृत्युंजय ब्रह्मवंशी)</strong></p>
     </footer>
 
+    <!-- Tab Switcher Script -->
+    <script>
+        function switchBook(bookId) {
+            // Remove active class from all books and tabs
+            document.querySelectorAll('.book-content').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(t => t.classList.remove('active'));
+
+            // Activate selected book and tab
+            document.getElementById(bookId).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+    </script>
 </body>
 </html>
